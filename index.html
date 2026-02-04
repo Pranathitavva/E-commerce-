@@ -1,0 +1,211 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase | Product Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <a class="logo" href="#product">Shop<span>Ease</span></a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle Menu">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a class="nav-item active" href="#product">Home</a>
+        <a class="nav-item" href="#product">Product</a>
+        <a class="nav-item" href="#related">Related</a>
+        <a class="nav-item" href="#contact">Contact</a>
+
+        <button class="cart-btn" id="cartBtn">
+          🛒 Cart <span id="cartCount">0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Product Section -->
+  <main class="container product-section" id="product">
+
+    <!-- Image -->
+    <section class="product-images">
+      <div class="main-image">
+        <img id="mainProductImage"
+          src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=900"
+          alt="Smart Watch" />
+      </div>
+    </section>
+
+    <!-- Info -->
+    <section class="product-info">
+      <p class="badge" id="badgeText">Best Seller</p>
+
+      <h2 class="title" id="productTitle">Smart Watch Pro - Series X</h2>
+
+      <p class="desc" id="productDesc">
+        Premium smartwatch with fitness tracking, heart rate monitoring, AMOLED display,
+        and long-lasting battery. Perfect for daily wear and workouts.
+      </p>
+
+      <div class="rating" id="productRating">
+        ⭐⭐⭐⭐☆ <span>(4.2) 1,284 reviews</span>
+      </div>
+
+      <div class="price-box">
+        <h3 class="price" id="productPrice">
+          ₹2,999 <span class="old" id="productOldPrice">₹4,999</span>
+        </h3>
+        <p class="offer" id="productOffer">🔥 40% OFF Limited Time</p>
+      </div>
+
+      <!-- Color -->
+      <div class="option">
+        <p class="option-title">Choose Color</p>
+        <div class="colors">
+          <button class="color-btn active" data-color="black">Black</button>
+          <button class="color-btn" data-color="silver">Silver</button>
+          <button class="color-btn" data-color="blue">Blue</button>
+        </div>
+      </div>
+
+      <!-- Size -->
+      <div class="option">
+        <p class="option-title">Choose Strap Size</p>
+        <div class="sizes">
+          <button class="size-btn active">S</button>
+          <button class="size-btn">M</button>
+          <button class="size-btn">L</button>
+        </div>
+      </div>
+
+      <!-- Buy -->
+      <div class="buy-box">
+        <div class="qty">
+          <button id="minusBtn">-</button>
+          <span id="qtyValue">1</span>
+          <button id="plusBtn">+</button>
+        </div>
+
+        <button class="add-btn" id="addToCartBtn">Add to Cart</button>
+      </div>
+
+      <div class="extra-info">
+        <p>✅ Free Delivery</p>
+        <p>✅ 7 Days Replacement</p>
+        <p>✅ 1 Year Warranty</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Related Products -->
+  <section class="container related" id="related">
+    <div class="section-head">
+      <h2>Related Products</h2>
+      <p>Click View to load that product dynamically</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <img src="https://www.amazon.in/Bluetooth-Microphone-Canceling-Earphones-Headphone/dp/B0B92YY65J" alt="Wireless Earbuds">
+        <div class="card-body">
+          <h3>Wireless Earbuds</h3>
+          <p>₹1,499</p>
+          <button class="view-btn"
+            data-title="Wireless Earbuds"
+            data-price="₹1,499"
+            data-oldprice="₹2,199"
+            data-offer="🔥 32% OFF Today"
+            data-badge="Top Rated"
+            data-desc="High quality wireless earbuds with deep bass, noise reduction and long battery life."
+            data-image="https://www.amazon.in/Bluetooth-Microphone-Canceling-Earphones-Headphone/dp/B0B92YY65J">
+            View
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://www.vitsupp.in/shop/garmin-vivosmart-black-fitness-band-010-01317-10/" alt="Fitness Band">
+        <div class="card-body">
+          <h3>Fitness Band</h3>
+          <p>₹999</p>
+          <button class="view-btn"
+            data-title="Fitness Band"
+            data-price="₹999"
+            data-oldprice="₹1,499"
+            data-offer="🔥 33% OFF Today"
+            data-badge="Trending"
+            data-desc="Lightweight fitness band with steps tracking, sleep monitoring and water resistance."
+            data-image="https://www.vitsupp.in/shop/garmin-vivosmart-black-fitness-band-010-01317-10/">
+            View
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://phonokart.com/products/tribe-wireless-bluetooth-headset-fast-charging-with-30-hrs-play-time-black-in-the-ear-copy?srsltid=AfmBOoqtrn0I4BmQhtaBeFltw-udyqSuNRilRtmLX7aOGdFCxYyARalO" alt="Bluetooth Speaker">
+        <div class="card-body">
+          <h3>Bluetooth Speaker</h3>
+          <p>₹1,899</p>
+          <button class="view-btn"
+            data-title="Bluetooth Speaker"
+            data-price="₹1,899"
+            data-oldprice="₹2,799"
+            data-offer="🔥 30% OFF Today"
+            data-badge="Best Deal"
+            data-desc="Portable Bluetooth speaker with rich sound, extra bass and 10 hours playback."
+            data-image="https://phonokart.com/products/tribe-wireless-bluetooth-headset-fast-charging-with-30-hrs-play-time-black-in-the-ear-copy?srsltid=AfmBOoqtrn0I4BmQhtaBeFltw-udyqSuNRilRtmLX7aOGdFCxYyARalO">
+            View
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://ambiq.com/blog/a-clear-vision-of-smart-glasses/" alt="Smart Glasses">
+        <div class="card-body">
+          <h3>Smart Glasses</h3>
+          <p>₹3,499</p>
+          <button class="view-btn"
+            data-title="Smart Glasses"
+            data-price="₹3,499"
+            data-oldprice="₹4,499"
+            data-offer="🔥 22% OFF Today"
+            data-badge="New Launch"
+            data-desc="Stylish smart glasses with blue light filter, premium build and comfortable design."
+            data-image="https://ambiq.com/blog/a-clear-vision-of-smart-glasses/">
+            View
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="container contact" id="contact">
+    <div class="contact-box">
+      <h2>Contact Us</h2>
+      <p>Have questions? Send us a message.</p>
+
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <p>© 2026 ShopEase.</p>
+      
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
